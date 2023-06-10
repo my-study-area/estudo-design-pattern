@@ -156,10 +156,45 @@ class Cliente {
 }
 ```
 
+### Prototype
+#### Conceito
+No contexto dos design patterns, o conceito de "prototype" refere-se a um padrão de criação que envolve a clonagem de objetos existentes para criar novos objetos. O padrão Prototype permite criar cópias de um objeto original (protótipo) e modificar essas cópias conforme necessário, em vez de criar novos objetos do zero.
+
+O padrão Prototype é útil quando a criação de um objeto é custosa ou complexa, e a cópia desse objeto é uma alternativa mais eficiente. Ele permite que um objeto seja utilizado como protótipo para criar cópias sem especificar suas classes concretas. Dessa forma, novos objetos podem ser criados por meio da clonagem do protótipo existente.
+
+A principal ideia por trás do padrão Prototype é que o próprio objeto sendo copiado é responsável por clonar a si mesmo. Geralmente, isso é feito implementando uma interface ou fornecendo um método de clonagem. Ao clonar o objeto, são criadas cópias independentes, mantendo-se a estrutura e o estado do objeto original.
+
+Ao utilizar o padrão Prototype, é possível criar novos objetos com base em protótipos existentes, evitando a necessidade de criar uma nova instância do objeto do zero e configurá-lo manualmente. Isso pode ser especialmente útil quando há uma grande variedade de objetos a serem criados e suas configurações são semelhantes, mas com pequenas diferenças.
+
+O padrão Prototype oferece flexibilidade e facilita a criação de novos objetos com um custo mínimo. Ele é comumente utilizado em cenários onde a criação de objetos é intensiva em termos de recursos, como em jogos, em situações em que uma instância pode ser usada como um modelo para criar várias instâncias semelhantes.
+
+Em resumo, o padrão Prototype no contexto dos design patterns envolve a clonagem de objetos existentes para criar novos objetos. Ele permite criar cópias de objetos através de um processo de clonagem, evitando a necessidade de criar novas instâncias do zero. Isso oferece uma alternativa mais eficiente e flexível para a criação de objetos.
+#### Objetivo
+O objetivo principal do padrão de projeto Prototype é permitir a criação de novos objetos por meio da clonagem de um objeto protótipo existente, em vez de criar novas instâncias do zero. Isso traz uma série de benefícios, incluindo:
+
+1. Eficiência na criação de objetos: Em alguns casos, a criação de objetos pode ser um processo intensivo em termos de recursos, exigindo inicialização complexa ou acesso a recursos externos. O padrão Prototype evita esse custo, permitindo a clonagem de objetos já existentes, economizando tempo e recursos.
+
+2. Flexibilidade na criação de objetos: Ao clonar um objeto protótipo, é possível modificar as cópias resultantes conforme necessário. Isso permite criar objetos com pequenas variações, adaptando-os a diferentes cenários sem precisar criar e configurar cada objeto individualmente.
+
+3. Redução de acoplamento: O padrão Prototype promove a independência entre o código que cria novos objetos e os objetos que estão sendo criados. Isso reduz o acoplamento entre essas partes do código, tornando o sistema mais flexível e facilitando futuras alterações.
+
+4. Suporte a um conjunto variado de objetos: O padrão Prototype é especialmente útil quando há uma variedade significativa de objetos a serem criados, com configurações semelhantes. Ele permite que diferentes variações desses objetos sejam clonadas a partir de protótipos, em vez de ter que criar classes individuais para cada variação.
+
+5. Facilidade de implementação: A implementação do padrão Prototype geralmente envolve a definição de uma interface comum para os objetos protótipos e a implementação do método de clonagem. Isso torna a aplicação do padrão relativamente simples e direta.
+
+Em suma, o objetivo do padrão de projeto Prototype é fornecer uma maneira eficiente, flexível e desacoplada de criar novos objetos por meio da clonagem de objetos protótipos existentes. Isso promove a reutilização de código, reduz a complexidade da criação de objetos e aumenta a flexibilidade do sistema.
+
+#### Exemplos
+![Exemplo de protype simples](./imgs/creacional-prototype-1.png) 
+
+- [Implementação em Java](https://github.com/rinaldodev/design-patterns/blob/main/src/main/java/dev/rinaldo/designpatterns/behavioral/Prototype_1.java)
+
+
 ## Links
 - [Design pattern com Typescript - Otávio Miranda](https://www.youtube.com/playlist?list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H)
 - [Github do projeto Padrões de projeto com TypeScript - Otávio Miranda](https://github.com/luizomf/design-patterns-typescript/)
-- [PlantUML: gerar imagem UML](https://plantuml.com/starting)
+- [PlantUML: gerar imagem UML](http://www.plantuml.com/plantuml/uml/)
+- [PlantUML online](https://www.planttext.com/)
 - [Factory Method - refactoring.guru/](https://refactoring.guru/pt-br/design-patterns/factory-method)
 - [Curso Padrões de Projeto com Java - Reinaldo Dev](https://www.youtube.com/playlist?list=PLuYctAHjg89bBeh25plGraaYiAsryusw6)
 - [Repositório da playlist do Reinaldo Dev](https://github.com/rinaldodev/design-patterns)
