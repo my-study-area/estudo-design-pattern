@@ -189,6 +189,51 @@ Em suma, o objetivo do padrão de projeto Prototype é fornecer uma maneira efic
 
 - [Implementação em Java](https://github.com/rinaldodev/design-patterns/blob/main/src/main/java/dev/rinaldo/designpatterns/behavioral/Prototype_1.java)
 
+### Abstract Factory
+#### Conceito
+O padrão de projeto Abstract Factory, também conhecido como Kit, é um padrão de criação que fornece uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas classes concretas. Ele encapsula a criação de objetos em uma hierarquia de fábricas e permite que o código cliente trabalhe com as fábricas abstratas, em vez de classes concretas.
+
+Principais elementos do padrão Abstract Factory:
+
+- **AbstractFactory**: É uma interface ou classe abstrata que declara os métodos de criação para os objetos da família. Cada método da fábrica abstrata corresponde a um tipo de objeto da família de produtos.
+
+- **ConcreteFactory**: Implementa a interface da AbstractFactory e é responsável por criar os objetos da família de produtos específica. Cada ConcreteFactory é associada a uma única variante da família de produtos.
+
+- **AbstractProduct**: É uma interface ou classe abstrata que declara a interface dos objetos da família de produtos.
+
+- **ConcreteProduct**: Implementa a interface do AbstractProduct e representa um objeto específico da família de produtos.
+
+- **Client**: Utiliza as interfaces declaradas pela AbstractFactory e AbstractProduct para interagir com os objetos da família de produtos. O cliente não conhece as classes concretas dos objetos, mas trabalha apenas com as interfaces abstratas.
+
+O padrão Abstract Factory permite que o cliente crie famílias de objetos relacionados sem se preocupar com as classes concretas específicas desses objetos. Isso proporciona um alto nível de flexibilidade e extensibilidade, pois é possível introduzir novas famílias de produtos simplesmente criando novas classes de fábrica correspondentes, sem modificar o código do cliente.
+
+Além disso, o Abstract Factory é especialmente útil em situações onde existem múltiplas variantes ou famílias de produtos que precisam ser criadas de forma consistente. Ele promove o princípio de design SOLID de dependência da abstração, permitindo que o código cliente dependa apenas das interfaces abstratas, em vez de classes concretas.
+
+Em resumo, o padrão Abstract Factory fornece uma maneira de criar famílias de objetos relacionados sem se preocupar com as classes concretas, promovendo um código cliente flexível e extensível.
+
+#### Objetivo
+O objetivo do padrão Abstract Factory é fornecer uma interface para criar famílias de objetos relacionados sem especificar suas classes concretas. Ele permite criar objetos relacionados de maneira flexível, garantindo que eles sejam compatíveis entre si.
+
+Aqui estão alguns objetivos principais do padrão Abstract Factory:
+
+1. **Abstração da criação de objetos**: O padrão Abstract Factory encapsula a lógica de criação de objetos em uma interface abstrata. Isso permite que o cliente trabalhe com a interface abstrata, sem se preocupar com as classes concretas dos objetos criados.
+
+2. **Fornecer famílias de objetos relacionados**: O Abstract Factory cria famílias de objetos relacionados, ou seja, objetos que têm uma dependência entre si ou que são projetados para serem usados em conjunto. Isso garante que os objetos criados sejam compatíveis e coerentes entre si.
+
+3. **Promover a flexibilidade e extensibilidade**: O padrão Abstract Factory permite adicionar novas famílias de objetos sem modificar o código do cliente. Isso facilita a extensão do sistema com novos conjuntos de objetos relacionados, pois basta criar uma nova fábrica concreta que implemente a interface abstrata.
+
+4. **Permitir a seleção dinâmica de implementação**: O Abstract Factory permite que a escolha da fábrica concreta seja feita em tempo de execução. Isso permite que o sistema selecione dinamicamente a implementação adequada com base em determinados critérios, como o ambiente de execução ou as preferências do usuário.
+
+5. **Promover o princípio da inversão de dependência**: Ao usar o padrão Abstract Factory, o cliente depende apenas das interfaces abstratas, não das implementações concretas. Isso promove o princípio da inversão de dependência, permitindo que o código seja mais flexível, extensível e fácil de manter.
+
+Em resumo, o objetivo do padrão Abstract Factory é fornecer uma maneira flexível de criar famílias de objetos relacionados, promovendo a flexibilidade, extensibilidade e abstração no código do cliente. Isso torna o padrão útil em cenários onde há necessidade de criação de objetos em grupos coesos e interdependentes.
+
+#### Exemplo
+
+Fluxograma:
+![Fluxograma de Abstract Factory](./imgs/creacional-abstract-factory-method.png)
+
+![Fluxograma de Abstract Factory](./imgs/creacional-abstract-factory-method2.png)
 
 ## Links
 - [Design pattern com Typescript - Otávio Miranda](https://www.youtube.com/playlist?list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H)
