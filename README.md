@@ -2,6 +2,11 @@
 
 ## Padrão de projeto de criação
 
+- Singleton: garante que apenas um objeto de uma determinada classe seja criado em todo o projeto.
+- Abstract Factory: permite que um cliente crie famílias de objetos sem especificar suas classes concretas.
+- Builder: encapsula a construção de um produto e permite que ele seja construído em etapas.
+- Prototype: permite criar novas instâncias simplesmente copiando instâncias existentes.
+- Factory Method: as subclasses decidem quais classes concretas serão criadas.
 ### Factory method
 
 #### Conceito
@@ -301,3 +306,4 @@ Em resumo, o objetivo do padrão Builder é fornecer uma solução para a constr
 - [Curso Padrões de Projeto com Java - Reinaldo Dev](https://www.youtube.com/playlist?list=PLuYctAHjg89bBeh25plGraaYiAsryusw6)
 - [Repositório da playlist do Reinaldo Dev](https://github.com/rinaldodev/design-patterns)
 - [Design Patterns in Object Oriented Programming - Christopher Okhravi](https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc)
+- [Mergulhando no universo dos Design Patterns agnóstico a linguagem de programação](https://www.linkedin.com/pulse/mergulhando-universo-dos-design-patterns-agn%2525C3%2525B3stico-linguagem-neri%3FtrackingId=zdvr6WeIQr6NL1AHbZ46Hg%253D%253D/?trackingId=zdvr6WeIQr6NL1AHbZ46Hg%3D%3D)
