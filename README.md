@@ -2,6 +2,11 @@
 
 ## Padrão de projeto de criação
 
+- Singleton: garante que apenas um objeto de uma determinada classe seja criado em todo o projeto.
+- Abstract Factory: permite que um cliente crie famílias de objetos sem especificar suas classes concretas.
+- Builder: encapsula a construção de um produto e permite que ele seja construído em etapas.
+- Prototype: permite criar novas instâncias simplesmente copiando instâncias existentes.
+- Factory Method: as subclasses decidem quais classes concretas serão criadas.
 ### Factory method
 
 #### Conceito
@@ -184,6 +189,23 @@ O objetivo principal do padrão de projeto Prototype é permitir a criação de 
 
 Em suma, o objetivo do padrão de projeto Prototype é fornecer uma maneira eficiente, flexível e desacoplada de criar novos objetos por meio da clonagem de objetos protótipos existentes. Isso promove a reutilização de código, reduz a complexidade da criação de objetos e aumenta a flexibilidade do sistema.
 
+#### Objetivo
+O objetivo principal do padrão de projeto Builder é separar o processo de construção de um objeto complexo de sua representação, permitindo que o mesmo processo de construção possa criar diferentes representações do objeto.
+
+Aqui estão alguns objetivos específicos alcançados pelo padrão Builder:
+
+1. Encapsulamento: O padrão Builder encapsula o código de construção complexo em um objeto separado, o ConcreteBuilder, ocultando a lógica detalhada de construção do objeto do cliente. Isso evita que o cliente precise lidar diretamente com os detalhes internos do processo de construção.
+
+2. Flexibilidade: O padrão Builder oferece flexibilidade na construção de objetos complexos, permitindo que diferentes representações do objeto sejam criadas usando o mesmo processo de construção. Os ConcreteBuilders podem implementar diferentes estratégias de construção e retornar diferentes instâncias do objeto final, permitindo a variação da composição do objeto.
+
+3. Reutilização: O padrão Builder promove a reutilização de código, uma vez que os ConcreteBuilders podem ser reutilizados para construir diferentes objetos complexos seguindo a mesma sequência de etapas. Isso evita a duplicação de código e facilita a adição de novos tipos de objetos a serem construídos.
+
+4. Construção passo a passo: O padrão Builder permite a construção do objeto passo a passo, onde cada etapa do processo de construção é realizada separadamente. Isso é útil quando a construção de um objeto envolve várias etapas complexas e a ordem precisa ser seguida.
+
+5. Separação de responsabilidades: O padrão Builder separa as responsabilidades de construção do objeto do próprio objeto. Isso resulta em um código mais limpo e modular, onde cada parte do processo de construção é tratada por uma classe específica, facilitando a manutenção e evolução do código.
+
+Em resumo, o objetivo do padrão Builder é fornecer uma solução para a construção de objetos complexos de forma flexível, reutilizável e passo a passo, permitindo diferentes representações do objeto e separando a lógica de construção do cliente. Isso leva a um código mais organizado, modular e fácil de manter.
+
 #### Exemplos
 ![Exemplo de protype simples](./imgs/creacional-prototype-1.png) 
 
@@ -235,6 +257,46 @@ Fluxograma:
 
 ![Fluxograma de Abstract Factory](./imgs/creacional-abstract-factory-method2.png)
 
+### Builder
+#### Conceito
+O padrão de projeto Builder é um padrão de criação que permite construir objetos complexos passo a passo. Ele é especialmente útil quando a criação de um objeto requer uma sequência específica de etapas e quando o objeto final pode ter diferentes representações.
+
+O objetivo do padrão Builder é separar a construção de um objeto complexo de sua representação, de modo que o mesmo processo de construção possa criar diferentes representações. Isso permite que o código cliente seja independente das classes específicas do objeto que está sendo construído e também facilita a adição de novos tipos de objetos a serem construídos.
+
+O padrão Builder é composto pelos seguintes elementos principais:
+
+1. Builder: é uma interface ou classe abstrata que define os métodos para construir as diferentes partes do objeto. Normalmente, o Builder possui métodos para configurar as propriedades individuais do objeto.
+
+2. ConcreteBuilder: é uma implementação concreta da interface Builder. Ele fornece a implementação específica para construir o objeto. Cada ConcreteBuilder pode ter uma representação diferente do objeto final.
+
+3. Produto: representa o objeto complexo sendo construído. É a classe final que será criada pelo ConcreteBuilder. O Produto geralmente contém várias propriedades e métodos relacionados a ele.
+
+4. Diretor: opcionalmente, o padrão Builder pode ter um Diretor que coordena o processo de construção usando um Builder específico. Ele conhece a sequência correta de etapas para construir o objeto e pode invocar os métodos do Builder na ordem correta.
+
+O processo de construção ocorre chamando os métodos do Builder para configurar as propriedades do objeto passo a passo. Quando todas as etapas forem concluídas, o ConcreteBuilder retorna o objeto finalizado, que pode ser obtido pelo cliente.
+
+O padrão Builder é útil quando a construção de um objeto é complexa e requer etapas detalhadas. Ele permite a criação de objetos com diferentes configurações e oferece uma maneira flexível de construir objetos complexos.
+#### Objetivo
+O objetivo principal do padrão de projeto Builder é separar o processo de construção de um objeto complexo de sua representação, permitindo que o mesmo processo de construção possa criar diferentes representações do objeto.
+
+Aqui estão alguns objetivos específicos alcançados pelo padrão Builder:
+
+1. Encapsulamento: O padrão Builder encapsula o código de construção complexo em um objeto separado, o ConcreteBuilder, ocultando a lógica detalhada de construção do objeto do cliente. Isso evita que o cliente precise lidar diretamente com os detalhes internos do processo de construção.
+
+2. Flexibilidade: O padrão Builder oferece flexibilidade na construção de objetos complexos, permitindo que diferentes representações do objeto sejam criadas usando o mesmo processo de construção. Os ConcreteBuilders podem implementar diferentes estratégias de construção e retornar diferentes instâncias do objeto final, permitindo a variação da composição do objeto.
+
+3. Reutilização: O padrão Builder promove a reutilização de código, uma vez que os ConcreteBuilders podem ser reutilizados para construir diferentes objetos complexos seguindo a mesma sequência de etapas. Isso evita a duplicação de código e facilita a adição de novos tipos de objetos a serem construídos.
+
+4. Construção passo a passo: O padrão Builder permite a construção do objeto passo a passo, onde cada etapa do processo de construção é realizada separadamente. Isso é útil quando a construção de um objeto envolve várias etapas complexas e a ordem precisa ser seguida.
+
+5. Separação de responsabilidades: O padrão Builder separa as responsabilidades de construção do objeto do próprio objeto. Isso resulta em um código mais limpo e modular, onde cada parte do processo de construção é tratada por uma classe específica, facilitando a manutenção e evolução do código.
+
+Em resumo, o objetivo do padrão Builder é fornecer uma solução para a construção de objetos complexos de forma flexível, reutilizável e passo a passo, permitindo diferentes representações do objeto e separando a lógica de construção do cliente. Isso leva a um código mais organizado, modular e fácil de manter.
+
+#### Fluxograma
+![Fluxograma do Padrão de projeto builder](./imgs/creacional-builder-0.png)
+![Fluxograma do Padrão de projeto builder](./imgs/creacional-builder-1.png)
+![Fluxograma do Padrão de projeto builder](./imgs/creacional-builder-2.png)
 ## Links
 - [Design pattern com Typescript - Otávio Miranda](https://www.youtube.com/playlist?list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H)
 - [Github do projeto Padrões de projeto com TypeScript - Otávio Miranda](https://github.com/luizomf/design-patterns-typescript/)
@@ -243,3 +305,5 @@ Fluxograma:
 - [Factory Method - refactoring.guru/](https://refactoring.guru/pt-br/design-patterns/factory-method)
 - [Curso Padrões de Projeto com Java - Reinaldo Dev](https://www.youtube.com/playlist?list=PLuYctAHjg89bBeh25plGraaYiAsryusw6)
 - [Repositório da playlist do Reinaldo Dev](https://github.com/rinaldodev/design-patterns)
+- [Design Patterns in Object Oriented Programming - Christopher Okhravi](https://www.youtube.com/playlist?list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc)
+- [Mergulhando no universo dos Design Patterns agnóstico a linguagem de programação](https://www.linkedin.com/pulse/mergulhando-universo-dos-design-patterns-agn%2525C3%2525B3stico-linguagem-neri%3FtrackingId=zdvr6WeIQr6NL1AHbZ46Hg%253D%253D/?trackingId=zdvr6WeIQr6NL1AHbZ46Hg%3D%3D)
