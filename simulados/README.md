@@ -1,4 +1,150 @@
 # Simulados
+
+## Factory method
+1. O Factory Method é um padrão de projeto pertencente a qual categoria?
+   - a) Padrões de Criação
+   - b) Padrões Estruturais
+   - c) Padrões Comportamentais
+   - d) Padrões Arquiteturais
+
+2. Qual é o objetivo principal do Factory Method?
+   - a) Permitir a criação de objetos sem especificar suas classes concretas.
+   - b) Promover o acoplamento fraco entre objetos.
+   - c) Facilitar a comunicação entre objetos.
+   - d) Definir uma hierarquia de classes para objetos relacionados.
+
+3. O Factory Method envolve a criação de objetos em uma classe abstrata que é implementada por subclasses concretas. Essa classe abstrata é conhecida como:
+   - a) Abstract Factory
+   - b) Abstract Class
+   - c) Factory Class
+   - d) Product
+
+4. Qual é o nome do método abstrato que deve ser implementado pelas subclasses no Factory Method?
+   - a) create()
+   - b) newObject()
+   - c) getInstance()
+   - d) factoryMethod()
+
+5. No Factory Method, as subclasses são responsáveis por criar objetos de um determinado tipo, conhecidos como:
+   - a) Product
+   - b) Creator
+   - c) Factory
+   - d) Client
+
+6. O Factory Method é útil quando:
+   - a) É necessário criar objetos de diferentes famílias relacionadas.
+   - b) Deseja-se ocultar a implementação detalhada dos objetos.
+   - c) É necessário restringir a criação de objetos.
+   - d) É necessário criar objetos complexos com muitos parâmetros.
+
+7. Em um diagrama UML, qual símbolo é usado para representar o Factory Method?
+   - a) Setas
+   - b) Linhas sólidas
+   - c) Linhas pontilhadas
+   - d) Linhas tracejadas
+
+8. Qual é a principal vantagem do Factory Method?
+   - a) Melhora a reutilização de código.
+   - b) Aumenta a eficiência do programa.
+   - c) Reduz a complexidade do sistema.
+   - d) Facilita a comunicação entre objetos.
+
+9. Qual dos seguintes padrões de projeto é frequentemente combinado com o Factory Method?
+   - a) Singleton
+   - b) Observer
+   - c) Strategy
+   - d) Template Method
+
+10. O Factory Method é uma solução para qual problema de projeto?
+    - a) Criação de objetos relacionados sem especificar suas classes concretas.
+    - b) Compartilhamento eficiente de objetos.
+    - c) Controle de acesso a objetos.
+    - d) Criação de classes abstratas.
+
+11. O Factory Method permite a substituição fácil de classes de fábrica por versões:
+    - a) Mock
+    - b) Proxy
+    - c) Adapter
+    - d) Decorator
+
+12. No Factory Method, o cliente utiliza o Factory Method para obter objetos do tipo:
+    - a) Creator
+    - b) Factory
+    - c) Product
+    - d) AbstractFactory
+
+13. O Factory Method é uma alternativa ao
+
+ uso direto do operador:
+    - a) new
+    - b) create
+    - c) instance
+    - d) make
+
+14. O Factory Method suporta:
+    - a) Encapsulamento
+    - b) Herança
+    - c) Polimorfismo
+    - d) Sobrecarga
+
+15. Qual dos seguintes é um exemplo comum de uso do Factory Method em aplicativos do mundo real?
+    - a) Gerenciadores de banco de dados
+    - b) Sistemas de gerenciamento de projetos
+    - c) Navegadores de internet
+    - d) Editores de texto
+
+16. Qual dos seguintes NÃO é um exemplo adequado de uso do Factory Method?
+    - a) Criação de diferentes tipos de veículos em uma fábrica.
+    - b) Criação de diferentes tipos de animais em um zoológico.
+    - c) Criação de diferentes tipos de bebidas em uma cafeteria.
+    - d) Criação de diferentes tipos de roupas em uma loja de roupas.
+
+17. No Factory Method, a classe abstrata que define o Factory Method é conhecida como:
+    - a) Creator
+    - b) Product
+    - c) Factory
+    - d) AbstractFactory
+
+18. No Factory Method, a classe concreta que implementa o Factory Method é responsável por:
+    - a) Definir a interface abstrata.
+    - b) Criar objetos específicos.
+    - c) Gerenciar a fábrica de objetos.
+    - d) Executar as operações nos objetos.
+
+19. O Factory Method permite a criação de objetos através de subclasses, promovendo assim o princípio de:
+    - a) Acoplamento forte
+    - b) Herança múltipla
+    - c) Encapsulamento
+    - d) Acoplamento fraco
+
+20. Qual é a principal diferença entre o Factory Method e o Abstract Factory Method?
+    - a) O Factory Method lida com a criação de famílias de objetos relacionados, enquanto o Abstract Factory Method lida com a criação de um único tipo de objeto.
+    - b) O Factory Method utiliza classes abstratas para criar objetos, enquanto o Abstract Factory Method utiliza interfaces.
+    - c) O Factory Method requer que as subclasses implementem um método abstrato para criar objetos, enquanto o Abstract Factory Method requer que as subclasses implementem uma interface para criar famílias de objetos.
+    - d) O Factory Method é um padrão de projeto de criação, enquanto o Abstract Factory Method é um padrão de projeto estrutural.
+
+Gabarito:
+
+1. a
+2. a
+3. b
+4. d
+5. a
+6. b
+7. c
+8. a
+9. d
+10. a
+11. a
+12. c
+13. a
+14. c
+15. a
+16. d
+17. a
+18. b
+19. d
+20. c
 ## Abstract Factory method
 Simulado sobre Abstract Factory:
 
