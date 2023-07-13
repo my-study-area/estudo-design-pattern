@@ -211,6 +211,8 @@ Em resumo, o objetivo do padrão Builder é fornecer uma solução para a constr
 
 - [Implementação em Java](https://github.com/rinaldodev/design-patterns/blob/main/src/main/java/dev/rinaldo/designpatterns/behavioral/Prototype_1.java)
 
+![Exemplo de protype do site REfactory Guru](./imgs/creacional-prototype-refactory-guru.png) 
+
 ### Abstract Factory
 #### Conceito
 O padrão de projeto Abstract Factory, também conhecido como Kit, é um padrão de criação que fornece uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas classes concretas. Ele encapsula a criação de objetos em uma hierarquia de fábricas e permite que o código cliente trabalhe com as fábricas abstratas, em vez de classes concretas.
