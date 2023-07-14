@@ -189,23 +189,6 @@ O objetivo principal do padrão de projeto Prototype é permitir a criação de 
 
 Em suma, o objetivo do padrão de projeto Prototype é fornecer uma maneira eficiente, flexível e desacoplada de criar novos objetos por meio da clonagem de objetos protótipos existentes. Isso promove a reutilização de código, reduz a complexidade da criação de objetos e aumenta a flexibilidade do sistema.
 
-#### Objetivo
-O objetivo principal do padrão de projeto Builder é separar o processo de construção de um objeto complexo de sua representação, permitindo que o mesmo processo de construção possa criar diferentes representações do objeto.
-
-Aqui estão alguns objetivos específicos alcançados pelo padrão Builder:
-
-1. Encapsulamento: O padrão Builder encapsula o código de construção complexo em um objeto separado, o ConcreteBuilder, ocultando a lógica detalhada de construção do objeto do cliente. Isso evita que o cliente precise lidar diretamente com os detalhes internos do processo de construção.
-
-2. Flexibilidade: O padrão Builder oferece flexibilidade na construção de objetos complexos, permitindo que diferentes representações do objeto sejam criadas usando o mesmo processo de construção. Os ConcreteBuilders podem implementar diferentes estratégias de construção e retornar diferentes instâncias do objeto final, permitindo a variação da composição do objeto.
-
-3. Reutilização: O padrão Builder promove a reutilização de código, uma vez que os ConcreteBuilders podem ser reutilizados para construir diferentes objetos complexos seguindo a mesma sequência de etapas. Isso evita a duplicação de código e facilita a adição de novos tipos de objetos a serem construídos.
-
-4. Construção passo a passo: O padrão Builder permite a construção do objeto passo a passo, onde cada etapa do processo de construção é realizada separadamente. Isso é útil quando a construção de um objeto envolve várias etapas complexas e a ordem precisa ser seguida.
-
-5. Separação de responsabilidades: O padrão Builder separa as responsabilidades de construção do objeto do próprio objeto. Isso resulta em um código mais limpo e modular, onde cada parte do processo de construção é tratada por uma classe específica, facilitando a manutenção e evolução do código.
-
-Em resumo, o objetivo do padrão Builder é fornecer uma solução para a construção de objetos complexos de forma flexível, reutilizável e passo a passo, permitindo diferentes representações do objeto e separando a lógica de construção do cliente. Isso leva a um código mais organizado, modular e fácil de manter.
-
 #### Exemplos
 ![Exemplo de protype simples](./imgs/creacional-prototype-1.png) 
 
